@@ -3,25 +3,12 @@ import {
   skills,
   education,
   experience,
-  trekking,
   footer,
 } from "./user-data/data.js";
 
 import { URLs } from "./user-data/urls.js";
 
-const { medium, gitConnected, gitRepo } = URLs;
-
-async function fetchBlogsFromMedium(url) {
-  try {
-    const response = await fetch(url);
-    const { items } = await response.json();
-    populateBlogs(items, "blogs");
-  } catch (error) {
-    throw new Error(
-      `Error in fetching the blogs from Medium profile: ${error}`
-    );
-  }
-}
+const { gitConnected, gitRepo } = URLs;
 
 async function fetchReposFromGit(url) {
   try {
@@ -96,98 +83,6 @@ function populateSkills(items, id) {
 
     skillsTag.append(divAnimateBox);
   });
-}
-
-function populateTrekking(items) {
-  const skillsTag = document.getElementById('trekking');
-  items.forEach((item) => {
-    const h3 = getElement("li", null);
-    h3.innerHTML = item;
-
-    const divProgressWrap = getElement("div", "progress-wrap");
-    divProgressWrap.append(h3);
-
-    const divAnimateBox = getElement("div", "col-md-12 animate-box");
-    divAnimateBox.append(divProgressWrap);
-
-    skillsTag.append(divAnimateBox);
-  });
-}
-
-function populateBlogs(items, id) {
-  const projectdesign = document.getElementById(id);
-  const count = 3; // Number of blogs to display
-
-  for (let i = 0; i < count; i++) {
-      // Create a wrapper for the blog card
-      const blogCard = document.createElement("div");
-      blogCard.className = "blog-card";
-      blogCard.style = `
-          display: flex;
-          flex-direction: column;
-          border-radius: 12px;
-          padding: 16px;
-          font-size: 14px;
-          background: linear-gradient(135deg, rgb(255, 221, 153), rgb(249, 191, 63));
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-          min-height: 150px;
-          cursor: pointer;
-      `;
-
-      // Wrap the card content in an anchor tag
-      const blogLink = document.createElement("a");
-      blogLink.href = items[i].link;
-      blogLink.target = "_blank";
-      blogLink.style = "text-decoration: none; color: black; display: block;";
-
-      blogCard.appendChild(blogLink);
-
-      // Blog Title
-      const blogTitle = document.createElement("h4");
-      blogTitle.className = "blog-heading";
-      blogTitle.innerHTML = items[i].title;
-      blogTitle.style = "margin: 0 0 8px; font-size: 18px; font-weight: bold;";
-      blogLink.appendChild(blogTitle);
-
-      // Publish Date
-      const pubDateEle = document.createElement("p");
-      pubDateEle.className = "publish-date";
-      pubDateEle.innerHTML = getBlogDate(items[i].pubDate);
-      pubDateEle.style = "margin: 0 0 12px; font-size: 12px; color: #555;";
-      blogLink.appendChild(pubDateEle);
-
-      // Blog Description
-      const blogDescription = document.createElement("p");
-      blogDescription.className = "blog-description";
-      const html = items[i].content;
-      const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
-      blogDescription.innerHTML = doc;
-      blogDescription.style = "margin: 0 0 12px; font-size: 12px; color: #000;";
-      blogLink.appendChild(blogDescription);
-
-      // Categories (Tags)
-      const categoriesDiv = document.createElement("div");
-      categoriesDiv.style = "display: flex; gap: 8px; margin-top: 12px;";
-
-      for (const category of items[i].categories) {
-          const badge = document.createElement("span");
-          badge.className = "badge";
-          badge.innerHTML = category;
-          badge.style = `
-              font-size: 12px;
-              padding: 4px 8px;
-              background-color: #007acc;
-              color: white;
-              border-radius: 4px;
-          `;
-          categoriesDiv.appendChild(badge);
-      }
-
-      blogLink.appendChild(categoriesDiv);
-
-      // Append the blog card to the container
-      projectdesign.appendChild(blogCard);
-  }
 }
 
 function populateRepo(items, id) {
@@ -447,12 +342,10 @@ populateBio(bio, "bio");
 
 populateSkills(skills, "skills");
 
-fetchBlogsFromMedium(medium);
 fetchReposFromGit(gitRepo);
 fetchGitConnectedData(gitConnected);
 
 populateExp_Edu(experience, "experience");
-populateTrekking(trekking);
 populateExp_Edu(education, "education");
 
 populateLinks(footer, "footer");
