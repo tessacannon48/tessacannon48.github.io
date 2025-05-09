@@ -2254,23 +2254,6 @@ hr {
 	object-fit: cover;
   }
   
-  .research-card-header .research-icon {
-	position: absolute;
-	width: 60px;
-	height: 60px;
-	background-color: #009C58;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	bottom: -30px;
-	right: 20px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	z-index: 2;
-	color: white;
-	font-size: 24px;
-  }
-  
   .research-card-body {
 	padding: 25px 20px 20px;
   }
@@ -2297,7 +2280,8 @@ hr {
   
   .research-card-tags {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	text-align: center;
 	gap: 8px;
 	margin-bottom: 15px;
   }

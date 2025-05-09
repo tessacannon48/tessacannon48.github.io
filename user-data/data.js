@@ -1,14 +1,14 @@
 export const bio = [
   "Hey there, I'm Tessa Cannon!",
-  "<strong>Data Scientist </strong> with 2+ years of experience building data-driven solutions. Currently pursuing a Master's of Science in Artificial Intelligence for Sustainable Development at University College London.",
+  "<strong>Data Scientist </strong> with 2+ years of experience building data-driven solutions. Currently pursuing an MSc in Artificial Intelligence for Sustainable Development at University College London.",
   "Skilled in Python, R, SQL, and data visualization tools. Advanced knowledge of the statistics and mathematics behind machine learning algorithms. Particularly interested in diffusion models and computer vision.",
-  "Passionate about applying technical skills to promote sustainable development and build AI that is used for good.",
+  "Passionate about applying technical skills to promote sustainable development and build AI used for good.",
 ];
 
 export const skills = [
   "Languages: Python, R, SQL",
-  "Activities: Machine Learning, Deep Learning, Reinforcement Learning, Generative AI, Data Analysis, Data Viz, Web Scraping",
-  "Specialties: Diffusion Models, Convolutional Neural Networks, Remote Sensing Data",
+  "Activities: Machine Learning, Deep Learning, Reinforcement Learning, Generative AI, Data Analysis, Web Scraping",
+  "Specialties: Diffusion Models, Remote Sensing Data, Computer Vision, Strategic Data Analysis",
 ];
 
 export const experience = [
@@ -71,7 +71,7 @@ export const experience = [
 export const education = [
   {
     title: "MSc in Artificial Intelligence for Sustainable Development",
-    duration: "2024 - Present",
+    duration: "2024 - 2025",
     subtitle: "University College London",
     details: [],
     tags: [
@@ -101,17 +101,12 @@ export const research = [
   {
     title: "Mapping Arctic Fast Ice Terrain Using Diffusion-Based 3D Super-Resolution of Satellite Imagery",
     date: "2025 - Present",
-    description: "Developing advanced machine learning algorithms to analyze satellite imagery for environmental monitoring. This research focuses on detecting changes in forest cover, water resources, and urban development patterns.",
-    image: "https://via.placeholder.com/800x600/009C58/FFFFFF?text=Environmental+ML", // Replace with actual image path
-    icon: "leaf",
+    description: "MSc thesis project focused on using diffusion models to enhance the resolution of satellite imagery for better mapping of Arctic fast ice terrain. Currently in development.",
+    image: "./images/topography_map_diagram.jpg",
     tags: ["Machine Learning", "Remote Sensing", "Environmental Science"],
     links: [
       {
-        text: "View Publication",
-        url: "#"
-      },
-      {
-        text: "Project Details",
+        text: "Details Pending Publication",
         url: "#"
       }
     ]
@@ -119,18 +114,13 @@ export const research = [
   {
     title: "Detecting Multi-Family Housing in Satellite Imagery",
     date: "2021 - 2021",
-    description: "Investigated the application of blockchain technology to improve transparency and traceability in global supply chains. The research demonstrated a 40% reduction in verification times and enhanced trust among stakeholders.",
-    image: "/Users/tessacannon/Documents/Portfolio/tessacannon48.github.io/images/reu_poster.jpg", 
-    icon: "link",
-    tags: ["Blockchain", "Supply Chain", "Data Security"],
+    description: "Research project using DenseNet and PyTorch to identify multi-family housing in satellite images to improve U.S. Census Data of Harris County TX. This project was completed as part of a 10-week research internship sponsored by Google.",
+    image: "./images/reu_diagram.jpg", 
+    tags: ["Machine Learning", "Geospatial Data", "Political Science"],
     links: [
       {
-        text: "Read Paper",
-        url: "#"
-      },
-      {
-        text: "View Demo",
-        url: "#"
+        text: "View Research Poster",
+        url: "./documents/research_poster.pdf"
       }
     ]
   }
@@ -166,6 +156,10 @@ export const footer = [
   {
     label: "Links",
     data: [
+      {
+        text: "Resume",
+        link: "./documents/Tessa Cannon Resume (2025).pdf",
+      },
          {
            text: "Linkedin",
            link: "https://www.linkedin.com/in/tessa-cannon48/",
