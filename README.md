@@ -1,5 +1,5 @@
 # Portfolio Website.
 
-**If you enjoy this project, please consider [supporting me](https://www.paypal.me/vinaysomawat) to continue developing and maintaining it.**
+Check out my website at https://tessacannon48.github.io/. 
 
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/vinaysomawat)
+Source code developed by Vinay Somawat: https://github.com/vinaysomawat/vinaysomawat.github.io

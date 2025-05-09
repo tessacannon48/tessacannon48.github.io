@@ -97,6 +97,45 @@ export const education = [
   },
 ];
 
+export const research = [
+  {
+    title: "Mapping Arctic Fast Ice Terrain Using Diffusion-Based 3D Super-Resolution of Satellite Imagery",
+    date: "2025 - Present",
+    description: "Developing advanced machine learning algorithms to analyze satellite imagery for environmental monitoring. This research focuses on detecting changes in forest cover, water resources, and urban development patterns.",
+    image: "https://via.placeholder.com/800x600/009C58/FFFFFF?text=Environmental+ML", // Replace with actual image path
+    icon: "leaf",
+    tags: ["Machine Learning", "Remote Sensing", "Environmental Science"],
+    links: [
+      {
+        text: "View Publication",
+        url: "#"
+      },
+      {
+        text: "Project Details",
+        url: "#"
+      }
+    ]
+  },
+  {
+    title: "Detecting Multi-Family Housing in Satellite Imagery",
+    date: "2021 - 2021",
+    description: "Investigated the application of blockchain technology to improve transparency and traceability in global supply chains. The research demonstrated a 40% reduction in verification times and enhanced trust among stakeholders.",
+    image: "/Users/tessacannon/Documents/Portfolio/tessacannon48.github.io/images/reu_poster.jpg", 
+    icon: "link",
+    tags: ["Blockchain", "Supply Chain", "Data Security"],
+    links: [
+      {
+        text: "Read Paper",
+        url: "#"
+      },
+      {
+        text: "View Demo",
+        url: "#"
+      }
+    ]
+  }
+];
+
 export const footer = [
   //   {
   //     label: "Dev Profiles",

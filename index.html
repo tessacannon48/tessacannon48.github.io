@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Tessa Cannon - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portfolio webpage of Tessa Cannon" />
     <meta
@@ -20,18 +20,12 @@
       href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
     />
-
-    <script src="js/modernizr-2.6.2.min.js"></script>
     <script type="module" src="index.js"></script>
-    <script src="js/profile-card.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3624872272584888"
-     crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="colorlib-page">
@@ -67,10 +61,9 @@
                 <li><a href="#" data-nav-section="about">About</a></li>
                 <li><a href="#" data-nav-section="skills">Skills</a></li>
                 <li><a href="#" data-nav-section="repos">Top Repositories</a></li>
-                <li><a href="#" data-nav-section="experience">Work Experience</a>
-                </li>
-
+                <li><a href="#" data-nav-section="experience">Work Experience</a></li>
                 <li><a href="#" data-nav-section="education">Education</a></li>
+                <li><a href="#" data-nav-section="research">Research</a></li>
                 <li><a href="#" data-nav-section="contact">Contact</a></li>
               </ul>
             </div>
@@ -100,23 +93,6 @@
               <div id="skills" class="row"></div>
             </div>
           </section>
-          <section class="colorlib-profile" data-section="profile-card">
-            <div class="colorlib-narrow-content">
-              <div
-                class="row row-bottom-padded-sm animate-box"
-                data-animate-effect="fadeInLeft"
-              >
-                <div class="profile-cards">
-                  <div class="col">
-                    <div class="stack-card" user-id="8461233"></div>
-                  </div>
-                  <div class="col">
-                    <div class="github-card" username="tessacannon48"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
           <section class="colorlib-experience no-print" data-section="repos">
             <div class="colorlib-narrow-content">
               <div
@@ -130,7 +106,7 @@
                     style="color: inherit"
                   >
                     <h1>
-                      Top <span style="color: #f9bf3f">Repositories</span>
+                      Top <span style="color: #5cb85c">Repositories</span>
                       <i
                         class="fa fa-external-link"
                         aria-hidden="true"
@@ -163,7 +139,7 @@
                 data-animate-effect="fadeInLeft"
               >
                 <div class="about-desc">
-                  <h1>Work <span style="color: #f9bf3f">Experience</span></h1>
+                  <h1>Work <span style="color: #5cb85c">Experience</span></h1>
                 </div>
               </div>
               <div class="timeline-centered" id="experience"></div>
@@ -182,6 +158,23 @@
               <div class="timeline-centered" id="education"></div>
             </div>
           </section>
+
+          <section class="colorlib-research" data-section="research">
+            <div class="colorlib-narrow-content">
+              <div
+                class="row row-bottom-padded-sm animate-box"
+                data-animate-effect="fadeInLeft"
+              >
+                <div class="about-desc">
+                  <h1>Academic Research</h1>
+                  <p>Explore my academic and professional research projects below.</p>
+                </div>
+              </div>
+            
+              <div id="research-cards" class="row research-container"></div>
+            </div>
+          </section>
+
           <section class="colorlib-contact" data-section="contact">
             <div class="colorlib-narrow-content">
               <div
@@ -193,14 +186,9 @@
                 </div>
                 <p>
                   Feel free to email me at
-                  <strong>tessacannon48@gmail.com</strong> for any business opportunities, questions, or just to say hi! I’m always open to discussing new projects, creative ideas, or opportunities.
+                  <strong>tessacannon48@gmail.com</strong> for any business opportunities, questions, or just to say hi! I'm always open to discussing new projects, creative ideas, or opportunities.
                 </p>
               </div>
-            </div>
-          </section>
-          <section class="colorlib-footer no-print">
-            <div class="colorlib-narrow-content">
-              <p id="visitorCount">Visitor Count: Loading...</p>
             </div>
           </section>
           <section class="colorlib-footer no-print" data-section="footer">
@@ -214,6 +202,5 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
-
   </body>
 </html>

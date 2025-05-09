@@ -857,7 +857,7 @@ body.offcanvas .colorlib-nav-toggle {
 	.timeline-entry
 	.timeline-entry-inner
 	.timeline-icon.color-2 {
-	background: brown;
+	background: black;
 	color: white;
 }
 .timeline-centered
@@ -2120,7 +2120,7 @@ span {
     vertical-align: middle;
     white-space: nowrap;
     text-align: center;
-    background-color: brown !important;
+    background-color: black !important;
     border-radius: 10px;
 }
 
@@ -2195,5 +2195,148 @@ hr {
   .dark-mode {
 	strong {
 		color: #009C58;
+	}
+  }
+
+/* Research section styles */
+.colorlib-research {
+	padding-top: 3em;
+	padding-bottom: 0em;
+	clear: both;
+	width: 100%;
+	display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+	.colorlib-research {
+	  padding-top: 2em;
+	  padding-bottom: 0em;
+	}
+  }
+  
+  .research-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: space-between; /* This ensures cards are spaced evenly */
+	width: 100%;
+  }
+  
+  .research-card {
+	flex: 0 0 calc(50% - 15px); /* Two cards per row with gap */
+	width: calc(50% - 15px); /* Explicit width as a fallback */
+	max-width: calc(50% - 15px); /* Prevent cards from growing too wide */
+	margin-bottom: 30px;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+	background: white;
+  }
+  
+  .research-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .research-card-header {
+	position: relative;
+	height: 180px;
+	overflow: hidden;
+	background: linear-gradient(135deg, #009C58, #ADE069);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .research-card-header img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  .research-card-header .research-icon {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-color: #009C58;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: -30px;
+	right: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	color: white;
+	font-size: 24px;
+  }
+  
+  .research-card-body {
+	padding: 25px 20px 20px;
+  }
+  
+  .research-card-title {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #333;
+  }
+  
+  .research-card-date {
+	font-size: 14px;
+	margin-bottom: 15px;
+	color: #777;
+  }
+  
+  .research-card-description {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #555;
+	margin-bottom: 20px;
+  }
+  
+  .research-card-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 15px;
+  }
+  
+  .research-tag {
+	background-color: #f2f2f2;
+	padding: 4px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	color: #555;
+  }
+  
+  .research-card-links {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+  }
+  
+  .research-card-link {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #009C58;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 500;
+	transition: background-color 0.2s ease;
+  }
+  
+  .research-card-link:hover {
+	background-color: #007c46;
+	color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+	.research-card {
+	  flex: 0 0 100%; /* Full width on small screens */
+	  width: 100%;
+	  max-width: 100%;
 	}
   }

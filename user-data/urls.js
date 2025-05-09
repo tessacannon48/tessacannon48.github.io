@@ -1,9 +1,11 @@
+// user-data/urls.js
 const githubUsername = "tessacannon48";
 
-const createGitConnectedURL = (username) => `https://gitconnected.com/v1/portfolio/${username}`;
-const gitRepos = (username) => `https://pinned.berrysauce.dev/get/${username}`;
-
+// Export the URLs directly
 export const URLs = {
-    gitConnected: createGitConnectedURL(githubUsername),
-    gitRepo: gitRepos(githubUsername),
+  // Standard GitHub API endpoint for repositories
+  gitRepo: `https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=10`,
+  
+  // GitConnected profile information
+  gitConnected: `https://gitconnected.com/v1/portfolio/${githubUsername}`
 };
