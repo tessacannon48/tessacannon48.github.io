@@ -126,6 +126,19 @@ export const research = [
   }
 ];
 
+export const youtubeVideos = [
+  {
+    title: "How to Remove Clouds from Sentinel-2 Arctic Images Using a Conditional Diffusion Model",
+    url: "https://www.youtube.com/watch?v=VIDEO_ID_1",
+    thumbnail: "https://img.youtube.com/vi/0CCpH0Z3Mrw/0.jpg"
+  },
+  {
+    title: "How to Classify Sea Ice and Leads Using AI",
+    url: "https://www.youtube.com/watch?v=fLVKjpqdGwI",
+    thumbnail: "https://img.youtube.com/vi/fLVKjpqdGwI/0.jpg"
+  }
+];
+
 export const footer = [
   //   {
   //     label: "Dev Profiles",

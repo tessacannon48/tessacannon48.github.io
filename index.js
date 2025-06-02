@@ -5,6 +5,7 @@ import {
   experience,
   research,
   footer,
+  youtubeVideos
 } from "./user-data/data.js";
 
 import { URLs } from "./user-data/urls.js";
@@ -49,6 +50,53 @@ async function fetchReposFromGit(url) {
     }
   }
 }
+
+function populateYouTubeVideos(videos, containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  videos.forEach(video => {
+    const col = document.createElement("div");
+    col.className = "col-md-6 animate-box";
+
+    const card = document.createElement("div");
+    card.className = "video-card";
+    card.style = `
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out;
+    `;
+
+    card.onmouseover = () => card.style.transform = "translateY(-5px)";
+    card.onmouseout = () => card.style.transform = "translateY(0)";
+
+    const thumbnail = document.createElement("img");
+    thumbnail.src = video.thumbnail;
+    thumbnail.alt = video.title;
+    thumbnail.style = "width: 100%; height: auto;";
+
+    const caption = document.createElement("div");
+    caption.style = "padding: 15px;";
+    caption.innerHTML = `<h4 style="margin: 0;">${video.title}</h4>`;
+
+    const link = document.createElement("a");
+    link.href = video.url;
+    link.target = "_blank";
+    link.style = "text-decoration: none; color: inherit;";
+    link.appendChild(thumbnail);
+    link.appendChild(caption);
+
+    card.appendChild(link);
+    col.appendChild(card);
+    container.appendChild(col);
+  });
+}
+
 
 async function fetchReposWithFallback() {
   try {
@@ -490,6 +538,7 @@ populateExp_Edu(experience, "experience");
 populateExp_Edu(education, "education");
 populateResearch(research, "research-cards");
 populateLinks(footer, "footer");
+populateYouTubeVideos(youtubeVideos, "youtube-videos");
 
 // Fetch external data - using the fallback approach for more reliability
 fetchReposWithFallback();
