@@ -2347,9 +2347,10 @@ hr {
   justify-content: space-between;
   height: 100%; 
   width: 100%;
-  background: white;
+  background: white !important;
   border-radius: 10px;
   overflow: hidden;
+  color: black !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -2371,21 +2372,3 @@ hr {
   align-items: center;
 }
 
-.dark-mode .video-card {
-  background-color: #1c1c1c;
-  color: white;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
-}
-
-.dark-mode .video-card h4,
-.dark-mode .video-card .caption {
-  color: #ffffff;
-}
-
-.dark-mode .video-card:hover {
-  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.15);
-}
-
-.dark-mode .video-card img {
-  filter: brightness(0.85);
-}

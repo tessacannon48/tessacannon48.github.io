@@ -129,7 +129,7 @@ export const research = [
 export const youtubeVideos = [
   {
     title: "How to Remove Clouds from Sentinel-2 Arctic Images Using a Conditional Diffusion Model",
-    url: "https://www.youtube.com/watch?v=VIDEO_ID_1",
+    url: "https://youtu.be/0CCpH0Z3Mrw?si=kpFj8gJMZqAxVpVA",
     thumbnail: "https://img.youtube.com/vi/0CCpH0Z3Mrw/0.jpg"
   },
   {
