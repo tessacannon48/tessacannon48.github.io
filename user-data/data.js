@@ -1,6 +1,6 @@
 export const bio = [
   "Hey there, I'm Tessa Cannon!",
-  "<strong>Data Scientist </strong> with 2+ years of experience building data-driven solutions. Currently pursuing an MSc in Artificial Intelligence for Sustainable Development at University College London.",
+  "<strong>Data Scientist </strong> with 2+ years of experience building data-driven solutions. Recently completed my MSc in Artificial Intelligence for Sustainable Development at University College London.",
   "Skilled in Python, R, SQL, and data visualization tools. Advanced knowledge of the statistics and mathematics behind machine learning algorithms. Particularly interested in diffusion models and computer vision.",
   "Passionate about applying technical skills to promote sustainable development and build AI used for good.",
 ];
