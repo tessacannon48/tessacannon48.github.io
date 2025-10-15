@@ -7,7 +7,7 @@ export const bio = [
 
 export const skills = [
   "Languages: Python, R, SQL",
-  "Tools and Software: PyTorch, W&B, AWS, Docker, Tableau, Google Big Query, Looker Studio, ArcGIS"
+  "Tools and Software: PyTorch, W&B, AWS, Docker, Tableau, Google Big Query, Looker Studio, ArcGIS",
   "Focus Areas: Deep Learning, Computer Vision, Generative AI, Reinforcement Learning, Data Wrangling and Analysis",
   "Specialties: Computer Vision, Generative Diffusion Models, Remote Sensing Data",
 ];
