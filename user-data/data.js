@@ -21,7 +21,7 @@ export const experience = [
       "Leveraged SQL on AWS Redshift to generate actionable insights from raw data for a Fortune Global 500 client.",
       "Optimized marketing channels by building a Dockerized ETL pipeline, delivering an estimated 12x ROI.",
       "Fine-tuned Prophet time series forecast to model complex seasonal sales patterns across diverse product types.",
-      "Created automated marketing dashboards (Tableau, Looker, PBI) to surface insights from siloed data sources."
+      "Created automated marketing dashboards (Tableau, Looker, PBI) to surface insights from siloed data sources.",
       "Identified and resolved pipeline issues by monitoring data integrity in an AWS Redshift database.",
       "Automated manual data processing workflows to save the client over 2 hours of labor per week.",
     ],
