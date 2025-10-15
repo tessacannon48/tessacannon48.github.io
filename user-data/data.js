@@ -7,8 +7,9 @@ export const bio = [
 
 export const skills = [
   "Languages: Python, R, SQL",
-  "Activities: Machine Learning, Deep Learning, Reinforcement Learning, Generative AI, Data Analysis, Web Scraping",
-  "Specialties: Diffusion Models, Remote Sensing Data, Computer Vision, Strategic Data Analysis",
+  "Tools and Software: PyTorch, W&B, AWS, Docker, Tableau, Google Big Query, Looker Studio, ArcGIS
+  "Focus Areas: Deep Learning, Computer Vision, Generative AI, Reinforcement Learning, Data Wrangling and Analysis",
+  "Specialties: Computer Vision, Generative Diffusion Models, Remote Sensing Data",
 ];
 
 export const experience = [
@@ -17,10 +18,10 @@ export const experience = [
     duration: "Jul 2022 - May 2024",
     subtitle: "Data Science Analyst",
     details: [
-      "Derived customer insights from raw data to enhance targeted decision-making for a Fortune Global 500 company",
-      "Optimized marketing channels by constructing an automated end-to-end data pipeline with an estimated 12x ROI.",
-      "Built ML models to predict customer behavior such as churn propensity and purchase likelihood.",
-      "Created and automated dashboards in Tableau and Looker Studio to improve client’s data accessibility.",
+      "Leveraged SQL on AWS Redshift to generate actionable insights from raw data for a Fortune Global 500 client.",
+      "Optimized marketing channels by building a Dockerized ETL pipeline, delivering an estimated 12x ROI.",
+      "Fine-tuned Prophet time series forecast to model complex seasonal sales patterns across diverse product types.",
+      "Created automated marketing dashboards (Tableau, Looker, PBI) to surface insights from siloed data sources."
       "Identified and resolved pipeline issues by monitoring data integrity in an AWS Redshift database.",
       "Automated manual data processing workflows to save the client over 2 hours of labor per week.",
     ],
@@ -32,13 +33,14 @@ export const experience = [
     duration: "May 2021 - Jul 2021",
     subtitle: "Data Science Research Intern",
     details: [
-      "Designed ML model using DenseNet and PyTorch to recognize and identify housing types in satellite images.",
-      "Processed large datasets of satellite imagery and coordinate labels using ArcGIS, Python, and SQL.",
-      "Earned 1st Runner-Up prize for a research presentation judged by Google experts and Rice University faculty.",
+      "Built a PyTorch-based DenseNet-121 model for remote sensing classification of housing types using density maps.",
+      "Engineered custom datasets by preprocessing 13,000 high-resolution aerial image tiles with ArcGIS and Python.",
+      "Earned 1st Runner-Up prize for a research presentation judged by Google engineers and Rice University faculty."
     ],
     tags: [
       "Python",
       "ArcGIS",
+      "Pytorch",
       "Academic Research"
     ],
     icon: "google",
